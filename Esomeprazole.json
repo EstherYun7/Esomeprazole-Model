@@ -1,0 +1,1588 @@
+{
+  "Version": 76,
+  "Individuals": [
+    {
+      "Name": "Adult",
+      "Seed": 872543265,
+      "OriginData": {
+        "CalculationMethods": [
+          "SurfaceAreaPlsInt_VAR1",
+          "Body surface area - Mosteller"
+        ],
+        "Species": "Human",
+        "Population": "European_ICRP_2002",
+        "Gender": "MALE",
+        "Age": {
+          "Value": 30.0,
+          "Unit": "year(s)"
+        }
+      },
+      "Molecules": [
+        {
+          "Name": "CYP2C19",
+          "Type": "Enzyme",
+          "MembraneLocation": "Apical",
+          "TissueLocation": "Intracellular",
+          "IntracellularVascularEndoLocation": "Endosomal",
+          "Expression": [
+            {
+              "Name": "Brain",
+              "Value": 0.00014961101137
+            },
+            {
+              "Name": "Gonads",
+              "Value": 0.0003526545268
+            },
+            {
+              "Name": "Kidney",
+              "Value": 0.00015816021202
+            },
+            {
+              "Name": "Periportal",
+              "Value": 1.0
+            },
+            {
+              "Name": "Pericentral",
+              "Value": 1.0
+            },
+            {
+              "Name": "Lung",
+              "Value": 0.00040608703086
+            },
+            {
+              "Name": "SmallIntestine",
+              "Value": 0.3238009746
+            },
+            {
+              "Name": "Duodenum",
+              "Value": 0.3238009746
+            },
+            {
+              "Name": "UpperJejunum",
+              "Value": 0.3238009746
+            },
+            {
+              "Name": "LowerJejunum",
+              "Value": 0.3238009746
+            },
+            {
+              "Name": "UpperIleum",
+              "Value": 0.3238009746
+            },
+            {
+              "Name": "LowerIleum",
+              "Value": 0.3238009746
+            }
+          ],
+          "Ontogeny": {
+            "Name": "CYP2C19"
+          }
+        },
+        {
+          "Name": "CYP3A4",
+          "Type": "Enzyme",
+          "MembraneLocation": "Apical",
+          "TissueLocation": "Intracellular",
+          "IntracellularVascularEndoLocation": "Endosomal",
+          "Expression": [
+            {
+              "Name": "Brain",
+              "Value": 0.0041682898325
+            },
+            {
+              "Name": "Gonads",
+              "Value": 0.00078691079081
+            },
+            {
+              "Name": "Kidney",
+              "Value": 0.0053603428126
+            },
+            {
+              "Name": "Periportal",
+              "Value": 1.0
+            },
+            {
+              "Name": "Pericentral",
+              "Value": 1.0
+            },
+            {
+              "Name": "Lung",
+              "Value": 0.00042695753798
+            },
+            {
+              "Name": "SmallIntestine",
+              "Value": 0.0727697702
+            },
+            {
+              "Name": "Duodenum",
+              "Value": 0.0727697702
+            },
+            {
+              "Name": "UpperJejunum",
+              "Value": 0.0727697702
+            },
+            {
+              "Name": "LowerJejunum",
+              "Value": 0.0727697702
+            },
+            {
+              "Name": "UpperIleum",
+              "Value": 0.0727697702
+            },
+            {
+              "Name": "LowerIleum",
+              "Value": 0.0727697702
+            }
+          ],
+          "Ontogeny": {
+            "Name": "CYP3A4"
+          }
+        }
+      ]
+    }
+  ],
+  "Compounds": [
+    {
+      "Name": "Esomeprazole",
+      "IsSmallMolecule": true,
+      "PlasmaProteinBindingPartner": "Glycoprotein",
+      "Lipophilicity": [
+        {
+          "Name": "Measurement",
+          "Parameters": [
+            {
+              "Name": "Lipophilicity",
+              "Value": 1.34,
+              "Unit": "Log Units",
+              "ValueOrigin": {
+                "Source": "Unknown",
+                "Description": "Optimized"
+              }
+            }
+          ]
+        }
+      ],
+      "FractionUnbound": [
+        {
+          "Name": "Measurement",
+          "Species": "Human",
+          "Parameters": [
+            {
+              "Name": "Fraction unbound (plasma, reference value)",
+              "Value": 0.03
+            }
+          ]
+        }
+      ],
+      "Solubility": [
+        {
+          "Name": "Measurement",
+          "Parameters": [
+            {
+              "Name": "Solubility at reference pH",
+              "Value": 0.35,
+              "Unit": "mg/ml"
+            },
+            {
+              "Name": "Reference pH",
+              "Value": 7.0
+            }
+          ]
+        }
+      ],
+      "PkaTypes": [
+        {
+          "Type": "Acid",
+          "Pka": 9.68,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Type": "Base",
+          "Pka": 4.77,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "Processes": [
+        {
+          "InternalName": "MetabolizationIntrinsic_FirstOrder",
+          "DataSource": "CYP2C19",
+          "Species": "Human",
+          "Molecule": "CYP2C19",
+          "Parameters": [
+            {
+              "Name": "Intrinsic clearance",
+              "Value": 0.0,
+              "Unit": "l/min"
+            },
+            {
+              "Name": "Specific clearance",
+              "Value": 5.64,
+              "Unit": "1/min",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "InternalName": "MetabolizationIntrinsic_FirstOrder",
+          "DataSource": "CYP3A4",
+          "Species": "Human",
+          "Molecule": "CYP3A4",
+          "Parameters": [
+            {
+              "Name": "Intrinsic clearance",
+              "Value": 0.0,
+              "Unit": "l/min"
+            },
+            {
+              "Name": "Specific clearance",
+              "Value": 0.5,
+              "Unit": "1/min",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "InternalName": "CompetitiveInhibition",
+          "DataSource": "KI",
+          "Molecule": "CYP2C19",
+          "Parameters": [
+            {
+              "Name": "Ki",
+              "Value": 7.5,
+              "Unit": "µmol/l"
+            }
+          ]
+        }
+      ],
+      "CalculationMethods": [
+        "Cellular partition coefficient method - PK-Sim Standard",
+        "Cellular permeability - PK-Sim Standard"
+      ],
+      "Parameters": [
+        {
+          "Name": "Molecular weight",
+          "Value": 345.42,
+          "Unit": "g/mol"
+        }
+      ]
+    }
+  ],
+  "Protocols": [
+    {
+      "Name": "Adult_IV_Hassan_Alin_2000_40mg",
+      "ApplicationType": "Intravenous",
+      "DosingInterval": "Single",
+      "Parameters": [
+        {
+          "Name": "InputDose",
+          "Value": 40.0,
+          "Unit": "mg"
+        },
+        {
+          "Name": "Infusion time",
+          "Value": 30.0,
+          "Unit": "min"
+        }
+      ]
+    },
+    {
+      "Name": "Adult-IV-Niazi-2005-40mg-10min",
+      "ApplicationType": "Intravenous",
+      "DosingInterval": "Single",
+      "Parameters": [
+        {
+          "Name": "InputDose",
+          "Value": 40.0,
+          "Unit": "mg"
+        },
+        {
+          "Name": "Infusion time",
+          "Value": 10.0,
+          "Unit": "min"
+        }
+      ]
+    },
+    {
+      "Name": "Adult-IV-Niazi-2005-40mg-15min",
+      "ApplicationType": "Intravenous",
+      "DosingInterval": "Single",
+      "Parameters": [
+        {
+          "Name": "InputDose",
+          "Value": 40.0,
+          "Unit": "mg"
+        },
+        {
+          "Name": "Infusion time",
+          "Value": 15.0,
+          "Unit": "min"
+        }
+      ]
+    },
+    {
+      "Name": "Adult-IV-Niazi-2005-40mg-20min",
+      "ApplicationType": "Intravenous",
+      "DosingInterval": "Single",
+      "Parameters": [
+        {
+          "Name": "InputDose",
+          "Value": 40.0,
+          "Unit": "mg"
+        },
+        {
+          "Name": "Infusion time",
+          "Value": 20.0,
+          "Unit": "min"
+        }
+      ]
+    },
+    {
+      "Name": "Adult-IV-Niazi-2005-40mg-30min",
+      "ApplicationType": "Intravenous",
+      "DosingInterval": "Single",
+      "Parameters": [
+        {
+          "Name": "InputDose",
+          "Value": 40.0,
+          "Unit": "mg"
+        },
+        {
+          "Name": "Infusion time",
+          "Value": 30.0,
+          "Unit": "min"
+        }
+      ]
+    }
+  ],
+  "Simulations": [
+    {
+      "Name": "IVsim-Adult-Niazi-2005-40mg-15min",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Niazi-etal-Adult-IV-obs.40mg_15min"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 6.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|Adult-IV-Niazi-2005-40mg-15min|Application_1|ProtocolSchemaItem|Infusion time",
+          "Value": 15.0,
+          "Unit": "min"
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)"
+      ],
+      "Individual": "Adult",
+      "Compounds": [
+        {
+          "Name": "Esomeprazole",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Rodgers and Rowland",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Processes": [
+            {
+              "Name": "CYP2C19-CYP2C19",
+              "MoleculeName": "CYP2C19"
+            },
+            {
+              "Name": "CYP3A4-CYP3A4",
+              "MoleculeName": "CYP3A4"
+            }
+          ],
+          "Protocol": {
+            "Name": "Adult-IV-Niazi-2005-40mg-15min"
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "IVsim-Adult-Niazi-2005-40mg-15min-Esomeprazole-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "IVsim-Adult-Niazi-2005-40mg-15min|Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Niazi-etal-Adult-IV-obs.40mg_15min-Esomeprazole-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Niazi-etal-Adult-IV-obs.40mg_15min|Time ",
+              "Y": "Niazi-etal-Adult-IV-obs.40mg_15min|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|Conc ",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "OriginText": "Esomeprazole\nIVsim-Adult-Niazi-2005-40mg-15min\n2020-04-25 19:45"
+        }
+      ],
+      "Interactions": [
+        {
+          "Name": "CYP2C19-KI",
+          "MoleculeName": "CYP2C19",
+          "CompoundName": "Esomeprazole"
+        }
+      ]
+    },
+    {
+      "Name": "IVsim-Adult-HassanAlin-2000-40mg",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Hassan-Aline-Adult-IV-obs.40mg"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 7.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|Adult_IV_Hassan_Alin_2000_40mg|Application_1|ProtocolSchemaItem|Infusion time",
+          "Value": 30.0,
+          "Unit": "min"
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)"
+      ],
+      "Individual": "Adult",
+      "Compounds": [
+        {
+          "Name": "Esomeprazole",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Rodgers and Rowland",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Processes": [
+            {
+              "Name": "CYP2C19-CYP2C19",
+              "MoleculeName": "CYP2C19"
+            },
+            {
+              "Name": "CYP3A4-CYP3A4",
+              "MoleculeName": "CYP3A4"
+            }
+          ],
+          "Protocol": {
+            "Name": "Adult_IV_Hassan_Alin_2000_40mg"
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "IVsim-Adult-HassanAlin-2000-40mg-Esomeprazole-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "IVsim-Adult-HassanAlin-2000-40mg|Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Hassan-Aline-Adult-IV-obs.40mg-Esomeprazole-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Hassan-Aline-Adult-IV-obs.40mg|Time ",
+              "Y": "Hassan-Aline-Adult-IV-obs.40mg|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|Conc ",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "OriginText": "Esomeprazole\nIVsim-Adult-HassanAlin-2000-40mg\n2020-04-25 19:42"
+        }
+      ],
+      "Interactions": [
+        {
+          "Name": "CYP2C19-KI",
+          "MoleculeName": "CYP2C19",
+          "CompoundName": "Esomeprazole"
+        }
+      ]
+    },
+    {
+      "Name": "IVsim-Adult-Niazi-2005-40mg-10min",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Niazi-etal-Adult-IV-obs.40mg_10min"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 5.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|Adult-IV-Niazi-2005-40mg-10min|Application_1|ProtocolSchemaItem|Infusion time",
+          "Value": 10.0,
+          "Unit": "min"
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)"
+      ],
+      "Individual": "Adult",
+      "Compounds": [
+        {
+          "Name": "Esomeprazole",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Rodgers and Rowland",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Processes": [
+            {
+              "Name": "CYP2C19-CYP2C19",
+              "MoleculeName": "CYP2C19"
+            },
+            {
+              "Name": "CYP3A4-CYP3A4",
+              "MoleculeName": "CYP3A4"
+            }
+          ],
+          "Protocol": {
+            "Name": "Adult-IV-Niazi-2005-40mg-10min"
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "IVsim-Adult-Niazi-2005-40mg-10min-Esomeprazole-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "IVsim-Adult-Niazi-2005-40mg-10min|Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Niazi-etal-Adult-IV-obs.40mg_10min-Esomeprazole-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Niazi-etal-Adult-IV-obs.40mg_10min|Time ",
+              "Y": "Niazi-etal-Adult-IV-obs.40mg_10min|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|Conc ",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "OriginText": "Esomeprazole\nIVsim-Adult-Niazi-2005-40mg-10min\n2020-04-25 19:44"
+        }
+      ],
+      "Interactions": [
+        {
+          "Name": "CYP2C19-KI",
+          "MoleculeName": "CYP2C19",
+          "CompoundName": "Esomeprazole"
+        }
+      ]
+    },
+    {
+      "Name": "IVsim-Adult-Niazi-2005-40mg-20min",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Niazi-etal-Adult-IV-obs.40mg_20min"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 6.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|Adult-IV-Niazi-2005-40mg-20min|Application_1|ProtocolSchemaItem|Infusion time",
+          "Value": 20.0,
+          "Unit": "min"
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)"
+      ],
+      "Individual": "Adult",
+      "Compounds": [
+        {
+          "Name": "Esomeprazole",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Rodgers and Rowland",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Processes": [
+            {
+              "Name": "CYP2C19-CYP2C19",
+              "MoleculeName": "CYP2C19"
+            },
+            {
+              "Name": "CYP3A4-CYP3A4",
+              "MoleculeName": "CYP3A4"
+            }
+          ],
+          "Protocol": {
+            "Name": "Adult-IV-Niazi-2005-40mg-20min"
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "IVsim-Adult-Niazi-2005-40mg-20min-Esomeprazole-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "IVsim-Adult-Niazi-2005-40mg-20min|Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Niazi-etal-Adult-IV-obs.40mg_20min-Esomeprazole-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Niazi-etal-Adult-IV-obs.40mg_20min|Time ",
+              "Y": "Niazi-etal-Adult-IV-obs.40mg_20min|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|Conc ",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "OriginText": "Esomeprazole\nIVsim-Adult-Niazi-2005-40mg-20min\n2020-04-25 19:45"
+        }
+      ],
+      "Interactions": [
+        {
+          "Name": "CYP2C19-KI",
+          "MoleculeName": "CYP2C19",
+          "CompoundName": "Esomeprazole"
+        }
+      ]
+    },
+    {
+      "Name": "IVsim-Adult-Niazi-2005-40mg-30min",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Niazi-etal-Adult-IV-obs.40mg_30min"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 6.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|Adult-IV-Niazi-2005-40mg-30min|Application_1|ProtocolSchemaItem|Infusion time",
+          "Value": 30.0,
+          "Unit": "min"
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)"
+      ],
+      "Individual": "Adult",
+      "Compounds": [
+        {
+          "Name": "Esomeprazole",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Rodgers and Rowland",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Processes": [
+            {
+              "Name": "CYP2C19-CYP2C19",
+              "MoleculeName": "CYP2C19"
+            },
+            {
+              "Name": "CYP3A4-CYP3A4",
+              "MoleculeName": "CYP3A4"
+            }
+          ],
+          "Protocol": {
+            "Name": "Adult-IV-Niazi-2005-40mg-30min"
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "IVsim-Adult-Niazi-2005-40mg-30min-Esomeprazole-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "IVsim-Adult-Niazi-2005-40mg-30min|Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Niazi-etal-Adult-IV-obs.40mg_30min-Esomeprazole-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Niazi-etal-Adult-IV-obs.40mg_30min|Time ",
+              "Y": "Niazi-etal-Adult-IV-obs.40mg_30min|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|Conc ",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "OriginText": "Esomeprazole\nIVsim-Adult-Niazi-2005-40mg-30min\n2020-04-25 19:45"
+        }
+      ],
+      "Interactions": [
+        {
+          "Name": "CYP2C19-KI",
+          "MoleculeName": "CYP2C19",
+          "CompoundName": "Esomeprazole"
+        }
+      ]
+    }
+  ],
+  "ObservedData": [
+    {
+      "Name": "Hassan-Aline-Adult-IV-obs.40mg",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "C:\\Egnyte\\Private\\esther.yun\\Esomeprazole\\Observed_data\\Hassan-Aline-Adult-IV-obs.xlsx.40mg"
+        },
+        {
+          "Name": "File",
+          "Value": "Hassan-Aline-Adult-IV-obs"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "40mg"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Esomeprazole"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Conc ",
+          "QuantityInfo": {
+            "Name": "Conc ",
+            "Path": "Hassan-Aline-Adult-IV-obs.40mg|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|Conc "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "Date": "2018-05-08T13:11:49.0837463-04:00",
+            "Source": "Hassan-Aline-Adult-IV-obs.40mg.Conc [umol/L]",
+            "MolWeight": 345.416
+          },
+          "Values": [
+            2.52779245,
+            4.1887064,
+            5.70509434,
+            4.097197,
+            3.08513045,
+            1.96393764,
+            1.20386577,
+            0.8411984,
+            0.5507662,
+            0.295015872,
+            0.147507936,
+            0.0540659949,
+            0.0330802165
+          ],
+          "Dimension": "Concentration (molar)",
+          "Unit": "µmol/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Name": "Time ",
+          "Path": "Hassan-Aline-Adult-IV-obs.40mg|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined",
+          "Date": "2018-05-08T13:11:49.0837463-04:00",
+          "Source": "Hassan-Aline-Adult-IV-obs.40mg.Time [h]"
+        },
+        "Values": [
+          0.17,
+          0.329999983,
+          0.5,
+          0.75,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Niazi-etal-Adult-IV-obs.40mg_10min",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "C:\\Egnyte\\Private\\esther.yun\\Esomeprazole\\Observed_data\\Niazi-etal-Adult-IV-obs.xlsx.40mg_10min"
+        },
+        {
+          "Name": "File",
+          "Value": "Niazi-etal-Adult-IV-obs"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "40mg_10min"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Esomeprazole"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Conc ",
+          "QuantityInfo": {
+            "Name": "Conc ",
+            "Path": "Niazi-etal-Adult-IV-obs.40mg_10min|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|Conc "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "Date": "2018-05-08T14:31:42.9635133-04:00",
+            "Source": "Niazi-etal-Adult-IV-obs.40mg_10min.Conc [umol/L]",
+            "MolWeight": 345.416
+          },
+          "Values": [
+            0.0,
+            3.24757862,
+            7.597453,
+            5.91387033,
+            5.0049777,
+            3.84263849,
+            2.93341756,
+            2.26257372,
+            1.45715189,
+            0.9497285,
+            0.6061472,
+            0.396644145,
+            0.230912477,
+            0.124755517
+          ],
+          "Dimension": "Concentration (molar)",
+          "Unit": "µmol/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Name": "Time ",
+          "Path": "Niazi-etal-Adult-IV-obs.40mg_10min|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined",
+          "Date": "2018-05-08T14:31:42.9635133-04:00",
+          "Source": "Niazi-etal-Adult-IV-obs.40mg_10min.Time [h]"
+        },
+        "Values": [
+          0.0,
+          0.05,
+          0.17,
+          0.25,
+          0.329999983,
+          0.5,
+          0.75,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          4.0,
+          5.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Niazi-etal-Adult-IV-obs.40mg_15min",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "C:\\Egnyte\\Private\\esther.yun\\Esomeprazole\\Observed_data\\Niazi-etal-Adult-IV-obs.xlsx.40mg_15min"
+        },
+        {
+          "Name": "File",
+          "Value": "Niazi-etal-Adult-IV-obs"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "40mg_15min"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Esomeprazole"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Conc ",
+          "QuantityInfo": {
+            "Name": "Conc ",
+            "Path": "Niazi-etal-Adult-IV-obs.40mg_15min|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|Conc "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "Date": "2018-05-08T14:31:42.9635133-04:00",
+            "Source": "Niazi-etal-Adult-IV-obs.40mg_15min.Conc [umol/L]",
+            "MolWeight": 345.416
+          },
+          "Values": [
+            0.0,
+            2.160071,
+            5.899129,
+            7.26955032,
+            5.988218,
+            4.721611,
+            3.559116,
+            2.75419378,
+            1.91899252,
+            1.322168,
+            0.9338939,
+            0.6648162,
+            0.3500931,
+            0.184345827,
+            0.137810409
+          ],
+          "Dimension": "Concentration (molar)",
+          "Unit": "µmol/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Name": "Time ",
+          "Path": "Niazi-etal-Adult-IV-obs.40mg_15min|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined",
+          "Date": "2018-05-08T14:31:42.9635133-04:00",
+          "Source": "Niazi-etal-Adult-IV-obs.40mg_15min.Time [h]"
+        },
+        "Values": [
+          0.0,
+          0.05,
+          0.17,
+          0.25,
+          0.329999983,
+          0.5,
+          0.75,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Niazi-etal-Adult-IV-obs.40mg_20min",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "C:\\Egnyte\\Private\\esther.yun\\Esomeprazole\\Observed_data\\Niazi-etal-Adult-IV-obs.xlsx.40mg_20min"
+        },
+        {
+          "Name": "File",
+          "Value": "Niazi-etal-Adult-IV-obs"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "40mg_20min"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Esomeprazole"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Conc ",
+          "QuantityInfo": {
+            "Name": "Conc ",
+            "Path": "Niazi-etal-Adult-IV-obs.40mg_20min|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|Conc "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "Date": "2018-05-08T14:31:42.9635133-04:00",
+            "Source": "Niazi-etal-Adult-IV-obs.40mg_20min.Conc [umol/L]",
+            "MolWeight": 345.416
+          },
+          "Values": [
+            0.0,
+            1.44497144,
+            4.2901907,
+            5.556344,
+            6.45004272,
+            4.945075,
+            3.69322538,
+            3.141531,
+            2.17225122,
+            1.545616,
+            1.18716836,
+            0.8733823,
+            0.5139509,
+            0.2737469,
+            0.182487532
+          ],
+          "Dimension": "Concentration (molar)",
+          "Unit": "µmol/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Name": "Time ",
+          "Path": "Niazi-etal-Adult-IV-obs.40mg_20min|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined",
+          "Date": "2018-05-08T14:31:42.9635133-04:00",
+          "Source": "Niazi-etal-Adult-IV-obs.40mg_20min.Time [h]"
+        },
+        "Values": [
+          0.0,
+          0.05,
+          0.17,
+          0.25,
+          0.329999983,
+          0.5,
+          0.75,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Niazi-etal-Adult-IV-obs.40mg_30min",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "C:\\Egnyte\\Private\\esther.yun\\Esomeprazole\\Observed_data\\Niazi-etal-Adult-IV-obs.xlsx.40mg_30min"
+        },
+        {
+          "Name": "File",
+          "Value": "Niazi-etal-Adult-IV-obs"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "40mg_30min"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Esomeprazole"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Conc ",
+          "QuantityInfo": {
+            "Name": "Conc ",
+            "Path": "Niazi-etal-Adult-IV-obs.40mg_30min|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|Conc "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "Date": "2018-05-08T14:31:42.9635133-04:00",
+            "Source": "Niazi-etal-Adult-IV-obs.40mg_30min.Conc [umol/L]",
+            "MolWeight": 345.416
+          },
+          "Values": [
+            0.0,
+            0.968248963,
+            2.56207132,
+            3.38129759,
+            4.08132744,
+            5.3025856,
+            3.85706758,
+            3.02235031,
+            1.94878757,
+            1.32215238,
+            0.9487915,
+            0.724375248,
+            0.394801468,
+            0.199243411,
+            0.122897223
+          ],
+          "Dimension": "Concentration (molar)",
+          "Unit": "µmol/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Name": "Time ",
+          "Path": "Niazi-etal-Adult-IV-obs.40mg_30min|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined",
+          "Date": "2018-05-08T14:31:42.9635133-04:00",
+          "Source": "Niazi-etal-Adult-IV-obs.40mg_30min.Time [h]"
+        },
+        "Values": [
+          0.0,
+          0.05,
+          0.17,
+          0.25,
+          0.329999983,
+          0.5,
+          0.75,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    }
+  ]
+}
